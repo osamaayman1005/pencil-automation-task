@@ -1,0 +1,8 @@
+{
+    "spacesUrl": "https://spaces.pencilapp.com",
+    "baseUrl": "https://my.pencilapp.com",
+    "credentials": {
+        "email": "pencil@teml.net",
+        "password": "Admin@123"
+    }
+}
