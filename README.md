@@ -2,4 +2,5 @@
 
 Here is a demo video of the run
 
-![Demo Video](pencil-spaces-task.mp4)
+[Watch the demo video](pencil-spaces-task.mp4)
+
