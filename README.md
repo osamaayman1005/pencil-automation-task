@@ -1,6 +1,6 @@
-# Playwright Test Automation
+# Pencil Spaces Test Automation Task
 
-This repository contains automated tests written in Playwright for web application testing.
+This repository contains automated tests written in Playwright for pencil spaces task
 
 ## Prerequisites
 
