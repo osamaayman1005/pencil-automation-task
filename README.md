@@ -23,9 +23,9 @@ npx playwright test
 ```
 you can add --ui for the playwright runner and/or --headed to run the test in headed mode 
 
-## Demo Video
+## Demo Videos
 
-Here is a demo video of the run
+Here are a demo videos of the Execution
 
-[Watch the demo video](pencil-spaces-task.mp4)
-
+[Main Task](pencil-spaces-task.mp4)
+[Bonus Task](pencil-spaces-bonus-task.mp4)
