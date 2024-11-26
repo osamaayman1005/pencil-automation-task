@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import { AuthenticationPage } from '../pages/authentication.page';
 import { HomePage } from '../pages/home.page';
 import { SpacePage } from '../pages/space.page';
-import * as config from '../config.json'; 
+import * as config from '../config.json';
 
 test('Pencil App Test', async ({ page }) => {
   const auth = new AuthenticationPage(page);
@@ -26,7 +26,7 @@ test('Pencil App Test', async ({ page }) => {
 
   await space.addText({ x: 200, y: 150 }, 'This is a test');
 
-  await expect.soft(page).toHaveScreenshot('space-after-modifications.png', {threshold: 0.3});
+  await expect.soft(page).toHaveScreenshot('space-after-modifications.png', { threshold: 0.3 });
 
   await space.selectAllAndDelete();
 
@@ -40,3 +40,27 @@ test('Pencil App Test', async ({ page }) => {
 
   await auth.verifyThatCurrentPageIsLoginPage();
 });
+
+test('Pencil App Bonus', async ({ page }) => {
+  const auth = new AuthenticationPage(page);
+  const home = new HomePage(page);
+  const space = new SpacePage(page);
+
+  await page.goto(config.spacesUrl);
+  await auth.login(config.credentials.email, config.credentials.password);
+
+  await home.selectSpace('My First Space');
+
+  await space.createNewBoard();
+
+  await space.addText({ x: 500, y: 350 }, 'test');
+
+  await space.italicazeText({ x: 500, y: 350 });
+
+  await expect.soft(page).toHaveScreenshot('new-board.png', { threshold: 0.3 });
+
+  await space.deleteLastBoard();
+  
+  await page.waitForLoadState('networkidle');
+
+})
