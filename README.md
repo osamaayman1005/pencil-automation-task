@@ -28,4 +28,5 @@ you can add --ui for the playwright runner and/or --headed to run the test in he
 Here are a demo videos of the Execution
 
 [Main Task](pencil-spaces-task.mp4)
+
 [Bonus Task](pencil-spaces-bonus-task.mp4)
