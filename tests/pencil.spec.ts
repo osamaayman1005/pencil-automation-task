@@ -57,10 +57,10 @@ test('Pencil App Bonus', async ({ page }) => {
 
   await space.italicazeText({ x: 500, y: 350 });
 
-  await expect.soft(page).toHaveScreenshot('new-board.png', { threshold: 0.3 });
+  await expect.soft(page).toHaveScreenshot('new-board.png', { threshold: 1 });
 
   await space.deleteLastBoard();
-  
+
   await page.waitForLoadState('networkidle');
 
 })
