@@ -25,7 +25,7 @@ you can add --ui for the playwright runner and/or --headed to run the test in he
 
 ## Demo Videos
 
-Here are a demo videos of the Execution
+Here are the demo videos of the Execution
 
 [Main Task](pencil-spaces-task.mp4)
 
